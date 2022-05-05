@@ -1,0 +1,122 @@
+/*
+  Styles to use.
+*/
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #ddd;
+  background: #0F2027;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Indie Flower', cursive, sans-serif;
+  font-size: 1.5rem;
+}
+
+#container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: lighter;
+  text-align: center;
+  color: #88c0cb;
+  transition: color .3s ease;
+}
+
+.title:hover {
+  color: #74a8b2;
+}
+
+#bar {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+
+/* view of routes */
+
+.clothesRoutes {
+  list-style: none;
+}
+
+.clothesRoutes li {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+
+/* links for the routes */
+
+.link {
+  text-decoration: none;
+  color: #6d8cca;
+}
+
+.link:hover {
+  border-bottom: .5px solid #ccc;
+}
+
+
+/* textarea with json code */
+
+#jsonCodeModelWrapper {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+#jsonCodeModelWrapper textarea {
+  font-size: 1rem;
+  background-color: #001845;
+  color: #aaa;
+  border-style: none;
+}
+
+
+/* main footer */
+
+#mainFooter {
+  background-color: #012a4a;
+  width: 100%;
+  padding: .2rem;
+  margin: 0;
+}
+
+#mainFooter p {
+  text-align: center;
+}
+
+
+/* responsive */
+
+@media (max-width: 900px) {
+  #bar {
+    width: 60%;
+  }
+}
+
+@media (max-width: 700px) {
+  #bar {
+    width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  #bar {
+    width: 90%;
+  }
+}

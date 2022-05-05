@@ -1,0 +1,75 @@
+<!-- PRINCIPAL PAGE -->
+
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<h1 class="title">Clothes Restapi</h1>
+
+<hr id="bar">
+
+<p class="intro">A small restapi of clothes. <br> Return json objects of a database made with sqlite3.</p>
+
+<h2 class="title">Routes</h2>
+
+<h4 class="title">GET</h4>
+<ul class="clothesRoutes">
+  <li>
+    Return list of clothes objects
+    <a href="{{ url_for('restapi.clothes_handler') }}" target="_blank" rel="noreferrer" class="link">/clothes</a>
+  </li>
+  <li>
+    Return a clothe using your id
+    <a href="{{ url_for('restapi.clothe_handler', id = 1) }}" target="_blank" rel="noreferrer" class="link">/clothe/1</a>
+  </li>
+</ul>
+
+<h4 class="title">POST</h4>
+<ul class="clothesRoutes">
+  <li>
+    Save a new clothe in the database
+    <a href="{{ url_for('restapi.add_clothe') }}" target="_blank" rel="noreferrer" class="link">/add-clothe</a>
+  </li>
+</ul>
+
+<h4 class="title">PUT</h4>
+<ul class="clothesRoutes">
+  <li>
+    Update a clothe with new values
+    <a href="{{ url_for('restapi.update_clothe', id = 1) }}" target="_blank" rel="noreferrer" class="link">/update-clothe/1</a>
+  </li>
+</ul>
+
+<h4 class="title">DELETE</h4>
+<ul class="clothesRoutes">
+  <li>
+    Delete a clothe of the database using your id
+    <a href="{{ url_for('restapi.delete_clothe', id = 1) }}" target="_blank" rel="noreferrer" class="link">/delete-clothe/1</a>
+  </li>
+</ul>
+
+<h2 class="title">Json to send</h2>
+
+<p class="intro">Use a json object for send data, necesary in case of POST and PUT request with the following keys.</p>
+
+<div id="jsonCodeModelWrapper">
+  <textarea cols="55" rows="20">
+  {
+    "name": "Pants",
+    "price": 15.9,
+    "size": "L"
+  }
+  </textarea>
+</div>
+
+<h5 class="title">Name</h5>
+<p class="intro">The name of the clothe</p>
+
+<h5 class="title">Price</h5>
+<p class="intro">The price for the clothe, must be a integer or decimal number</p>
+
+<h5 class="title">Size</h5>
+<p class="intro">The size for the clothe "XS", "S", "M", "L", "XL"</p>
+
+
+{% endblock %}

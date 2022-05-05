@@ -1,0 +1,6 @@
+{
+  "PORT": 7000,
+  "HOST": "0.0.0.0",
+  "DEBUG": 1,
+  "SQLITE_DB_PATH": "./database/clothes.sqlite"
+}
