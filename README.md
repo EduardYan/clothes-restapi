@@ -10,6 +10,10 @@ $ cd clothes-restapi
 $ pip3 install -r ./requirements.txt
 ```
 
+## Configuration
+You can set some configuartion for the restapi in the file __"conf.json"__, like the port, debug for restart the server in case of code changes and the path for the database.
+
+
 ## Running
 
 Only execute the file index.py
@@ -17,6 +21,8 @@ Only execute the file index.py
 ```bash
 $ python3 index.py
 ```
+
+Now the restapi is running in localhost:7000 or the port configurated in __conf.json file__
 
 ## Routes
 
